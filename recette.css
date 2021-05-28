@@ -27,8 +27,9 @@ div.centre{
 .contenu{
     overflow: visible;
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
+    margin: 40px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow: 0 0 10px 8px rgba(0, 0, 0, .1);
 }
 
@@ -73,16 +74,18 @@ div.info {
     bottom: 0;
     width: 100%;
     color: white;
-    height: 80px;
+    height: 50px;
     background-color: #6C829dc0;
 }
 
 .table td {
     text-align: center;
+    vertical-align: top;
+    font-size: 12px;
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
     
 }
@@ -102,8 +105,7 @@ div.colonne1 {
 
 
 div.colonne2 {
-    float: right;
-    margin-left: 10%;
+    margin-left: 0;
 }
 
 div.item p {
@@ -146,3 +148,55 @@ table.preparation td.preparation_etape {
 * {
     overflow: auto;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+  
+    .contenu{
+        min-width: 350px;
+        margin: 60px 10% 80px 10%;
+        padding: 0 30px 30px 30px;
+    }
+
+    div.info {
+        position: relative;
+    }
+    .table {
+        height: 80px;
+    }
+
+    .table td {
+        font-size: 14px;
+    }
+
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+        
+    }
+    
+    div.colonne1 {
+        display: inline-block;
+       
+    }
+    
+    
+    div.colonne2 {
+        float: right;
+        margin-left: 10%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 900px) {
+  
+    .contenu{
+        min-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 644px;
+    }
+
+]
